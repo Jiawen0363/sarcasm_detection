@@ -1,0 +1,121 @@
+{
+  "checkpoint": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/checkpoints/checkpoint-179",
+  "data_path": "/home/jiawen/AppraisalBench/4702/Sarcasm_Headlines_Dataset_v2.json",
+  "split_seed": 42,
+  "train_ratio": 0.8,
+  "val_ratio": 0.1,
+  "test_ratio": 0.1,
+  "max_length": 96,
+  "pooling": "first_token_index_0",
+  "pca": "sklearn PCA n_components=2, fit on all test samples (both classes)",
+  "layers": [
+    {
+      "layer": 0,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.1344517022371292,
+      "evr_pc2": 0.050219591706991196,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/pca_first_token/layer_00.png"
+    },
+    {
+      "layer": 1,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.15187910199165344,
+      "evr_pc2": 0.0541536845266819,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/pca_first_token/layer_01.png"
+    },
+    {
+      "layer": 2,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.16950483620166779,
+      "evr_pc2": 0.052615221589803696,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/pca_first_token/layer_02.png"
+    },
+    {
+      "layer": 3,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.3373187780380249,
+      "evr_pc2": 0.1073947474360466,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/pca_first_token/layer_03.png"
+    },
+    {
+      "layer": 4,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.22210946679115295,
+      "evr_pc2": 0.10295169800519943,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/pca_first_token/layer_04.png"
+    },
+    {
+      "layer": 5,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.29504266381263733,
+      "evr_pc2": 0.0910997986793518,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/pca_first_token/layer_05.png"
+    },
+    {
+      "layer": 6,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.1753750741481781,
+      "evr_pc2": 0.09610424935817719,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/pca_first_token/layer_06.png"
+    },
+    {
+      "layer": 7,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.24750743806362152,
+      "evr_pc2": 0.11268310248851776,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/pca_first_token/layer_07.png"
+    },
+    {
+      "layer": 8,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.5171980261802673,
+      "evr_pc2": 0.04788709431886673,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/pca_first_token/layer_08.png"
+    },
+    {
+      "layer": 9,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.5709871053695679,
+      "evr_pc2": 0.04875674843788147,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/pca_first_token/layer_09.png"
+    },
+    {
+      "layer": 10,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.5833421945571899,
+      "evr_pc2": 0.06066017597913742,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/pca_first_token/layer_10.png"
+    },
+    {
+      "layer": 11,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.64338618516922,
+      "evr_pc2": 0.051703136414289474,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/pca_first_token/layer_11.png"
+    }
+  ]
+}

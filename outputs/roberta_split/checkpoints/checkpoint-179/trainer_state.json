@@ -1,0 +1,54 @@
+{
+  "best_global_step": 179,
+  "best_metric": 0.9092290163311811,
+  "best_model_checkpoint": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/checkpoints/checkpoint-179",
+  "epoch": 1.0,
+  "eval_steps": 500,
+  "global_step": 179,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 1.0,
+      "grad_norm": 7.653306484222412,
+      "learning_rate": 1.2422360248447206e-07,
+      "loss": 0.3286,
+      "step": 179
+    },
+    {
+      "epoch": 1.0,
+      "eval_accuracy": 0.916491963661775,
+      "eval_f1": 0.9092290163311811,
+      "eval_loss": 0.2049364298582077,
+      "eval_precision": 0.9425196850393701,
+      "eval_recall": 0.8782098312545855,
+      "eval_roc_auc": 0.9772095556979292,
+      "eval_runtime": 2.4713,
+      "eval_samples_per_second": 1158.111,
+      "eval_steps_per_second": 4.856,
+      "step": 179
+    }
+  ],
+  "logging_steps": 500,
+  "max_steps": 179,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 1,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": true
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 359327479416960.0,
+  "train_batch_size": 128,
+  "trial_name": null,
+  "trial_params": null
+}

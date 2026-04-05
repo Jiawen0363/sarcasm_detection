@@ -1,0 +1,124 @@
+{
+  "weights": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/saved_best_model",
+  "pretrained_only": false,
+  "checkpoint": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/saved_best_model",
+  "model_name": "roberta-base",
+  "data_path": "/home/jiawen/AppraisalBench/4702/Sarcasm_Headlines_Dataset_v2.json",
+  "split_seed": 42,
+  "train_ratio": 0.8,
+  "val_ratio": 0.1,
+  "test_ratio": 0.1,
+  "max_length": 96,
+  "pooling": "first_token_index_0",
+  "pca": "sklearn PCA n_components=2, fit on all test samples (both classes)",
+  "layers": [
+    {
+      "layer": 0,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.1360017955303192,
+      "evr_pc2": 0.0500972718000412,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/pca_first_token/layer_00.png"
+    },
+    {
+      "layer": 1,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.15132631361484528,
+      "evr_pc2": 0.07330814003944397,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/pca_first_token/layer_01.png"
+    },
+    {
+      "layer": 2,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.1639925092458725,
+      "evr_pc2": 0.08926624059677124,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/pca_first_token/layer_02.png"
+    },
+    {
+      "layer": 3,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.3694908320903778,
+      "evr_pc2": 0.11469818651676178,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/pca_first_token/layer_03.png"
+    },
+    {
+      "layer": 4,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.20436567068099976,
+      "evr_pc2": 0.0856589525938034,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/pca_first_token/layer_04.png"
+    },
+    {
+      "layer": 5,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.26178136467933655,
+      "evr_pc2": 0.08537079393863678,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/pca_first_token/layer_05.png"
+    },
+    {
+      "layer": 6,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.20702239871025085,
+      "evr_pc2": 0.12049885094165802,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/pca_first_token/layer_06.png"
+    },
+    {
+      "layer": 7,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.15218763053417206,
+      "evr_pc2": 0.08742186427116394,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/pca_first_token/layer_07.png"
+    },
+    {
+      "layer": 8,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.2450154572725296,
+      "evr_pc2": 0.08970583230257034,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/pca_first_token/layer_08.png"
+    },
+    {
+      "layer": 9,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.20803968608379364,
+      "evr_pc2": 0.061080511659383774,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/pca_first_token/layer_09.png"
+    },
+    {
+      "layer": 10,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.19546419382095337,
+      "evr_pc2": 0.07704997807741165,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/pca_first_token/layer_10.png"
+    },
+    {
+      "layer": 11,
+      "n": 2862,
+      "n_class_0": 1499,
+      "n_class_1": 1363,
+      "evr_pc1": 0.09658447653055191,
+      "evr_pc2": 0.03588453680276871,
+      "figure": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/pca_first_token/layer_11.png"
+    }
+  ]
+}

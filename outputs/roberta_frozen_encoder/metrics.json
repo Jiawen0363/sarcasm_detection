@@ -1,0 +1,36 @@
+{
+  "model_name": "roberta-base",
+  "frozen_encoder": true,
+  "trainable_param_count": 592130,
+  "total_param_count": 124647170,
+  "data_path": "/home/jiawen/AppraisalBench/4702/Sarcasm_Headlines_Dataset_v2.json",
+  "device": "cuda",
+  "seed": 42,
+  "max_length": 96,
+  "head_learning_rate": 0.001,
+  "num_train_epochs": 10.0,
+  "retain_only_checkpoint_step": 716,
+  "snapshot_best_dir": "/home/jiawen/AppraisalBench/4702/outputs/roberta_frozen_encoder/saved_best_model",
+  "split": {
+    "train_size": 22895,
+    "val_size": 2862,
+    "test_size": 2862,
+    "train_pos_ratio": 0.4764359030355973,
+    "val_pos_ratio": 0.47624039133473095,
+    "test_pos_ratio": 0.47624039133473095
+  },
+  "val": {
+    "accuracy": 0.836827393431167,
+    "precision": 0.8505477308294209,
+    "recall": 0.797505502567865,
+    "f1": 0.8231730405149564,
+    "roc_auc": 0.9146496294668445
+  },
+  "test": {
+    "accuracy": 0.8350803633822502,
+    "precision": 0.8424289008455035,
+    "recall": 0.8041085840058694,
+    "f1": 0.8228228228228228,
+    "roc_auc": 0.9168832046015514
+  }
+}

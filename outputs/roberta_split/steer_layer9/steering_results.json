@@ -1,0 +1,161 @@
+{
+  "checkpoint": "/home/jiawen/AppraisalBench/4702/outputs/roberta_split/checkpoints/checkpoint-179",
+  "data_path": "/home/jiawen/AppraisalBench/4702/Sarcasm_Headlines_Dataset_v2.json",
+  "split_seed": 42,
+  "max_length": 96,
+  "layer": 9,
+  "token_index": 0,
+  "steering": "add alpha * v_hat to encoder.layer[L] output at token_index (forward hook)",
+  "v_definition": "train mean(h|y=1) - mean(h|y=0), L2 normalize; h = roberta hidden_states[L+1][:,token_index,:]",
+  "v_stats": {
+    "train_n": 22895,
+    "train_n_class_0": 11987,
+    "train_n_class_1": 10908,
+    "mean_diff_l2": 7.781311800424368,
+    "cosine_mu0_mu1": 0.9544698058824735
+  },
+  "test_projection_on_train_v_hat": {
+    "definition": "proj = h^T v_hat on TEST set, same layer/token as v_hat; v_hat unit L2",
+    "all_test_mean_proj": -0.5222079157829285,
+    "true_not_sarcastic_y0": {
+      "n": 1499,
+      "mean": -4.161135196685791,
+      "std": 2.55049729347229,
+      "min": -8.240666389465332,
+      "max": 5.212801456451416
+    },
+    "true_sarcastic_y1": {
+      "n": 1363,
+      "mean": 3.479810953140259,
+      "std": 2.4282803535461426,
+      "min": -6.022929668426514,
+      "max": 8.551393508911133
+    },
+    "mean_proj_difference_y1_minus_y0": 7.64094614982605,
+    "interpretation": "v_hat ∝ train mean(h|y=1)-mean(h|y=0). On test, expect mean(proj|y=1) > mean(proj|y=0) if geometry aligns.",
+    "sarcastic_higher_projection": true
+  },
+  "test_metrics_by_alpha": [
+    {
+      "alpha": -8.0,
+      "n": 2862.0,
+      "pred_sarcasm_rate": 0.3525506638714186,
+      "mean_prob_sarcastic": 0.34875788295460614,
+      "pred_sarcasm_rate_given_true_not_sarcastic": 0.016010673782521682,
+      "pred_sarcasm_rate_given_true_sarcastic": 0.7226705796038151,
+      "pred_not_sarcasm_rate_given_true_not_sarcastic": 0.9839893262174784,
+      "pred_not_sarcasm_rate_given_true_sarcastic": 0.2773294203961849,
+      "accuracy": 0.859538784067086
+    },
+    {
+      "alpha": -4.0,
+      "n": 2862.0,
+      "pred_sarcasm_rate": 0.4112508735150245,
+      "mean_prob_sarcastic": 0.4024341392983597,
+      "pred_sarcasm_rate_given_true_not_sarcastic": 0.03402268178785857,
+      "pred_sarcasm_rate_given_true_sarcastic": 0.826118855465884,
+      "pred_not_sarcasm_rate_given_true_not_sarcastic": 0.9659773182121414,
+      "pred_not_sarcasm_rate_given_true_sarcastic": 0.17388114453411593,
+      "accuracy": 0.89937106918239
+    },
+    {
+      "alpha": -2.0,
+      "n": 2862.0,
+      "pred_sarcasm_rate": 0.43011879804332637,
+      "mean_prob_sarcastic": 0.42386086881785523,
+      "pred_sarcasm_rate_given_true_not_sarcastic": 0.04336224149432955,
+      "pred_sarcasm_rate_given_true_sarcastic": 0.855465884079237,
+      "pred_not_sarcasm_rate_given_true_not_sarcastic": 0.9566377585056705,
+      "pred_not_sarcasm_rate_given_true_sarcastic": 0.144534115920763,
+      "accuracy": 0.9084556254367575
+    },
+    {
+      "alpha": -1.0,
+      "n": 2862.0,
+      "pred_sarcasm_rate": 0.44234800838574423,
+      "mean_prob_sarcastic": 0.43383856839353935,
+      "pred_sarcasm_rate_given_true_not_sarcastic": 0.05003335557038025,
+      "pred_sarcasm_rate_given_true_sarcastic": 0.8738077769625825,
+      "pred_not_sarcasm_rate_given_true_not_sarcastic": 0.9499666444296198,
+      "pred_not_sarcasm_rate_given_true_sarcastic": 0.12619222303741745,
+      "accuracy": 0.9136967155835081
+    },
+    {
+      "alpha": -0.5,
+      "n": 2862.0,
+      "pred_sarcasm_rate": 0.4437456324248777,
+      "mean_prob_sarcastic": 0.43869371517482625,
+      "pred_sarcasm_rate_given_true_not_sarcastic": 0.050700466977985324,
+      "pred_sarcasm_rate_given_true_sarcastic": 0.8760088041085841,
+      "pred_not_sarcasm_rate_given_true_not_sarcastic": 0.9492995330220146,
+      "pred_not_sarcasm_rate_given_true_sarcastic": 0.123991195891416,
+      "accuracy": 0.9143955276030747
+    },
+    {
+      "alpha": 0.0,
+      "n": 2862.0,
+      "pred_sarcasm_rate": 0.4482879105520615,
+      "mean_prob_sarcastic": 0.4434757252659188,
+      "pred_sarcasm_rate_given_true_not_sarcastic": 0.0533689126084056,
+      "pred_sarcasm_rate_given_true_sarcastic": 0.8826118855465884,
+      "pred_not_sarcasm_rate_given_true_not_sarcastic": 0.9466310873915944,
+      "pred_not_sarcasm_rate_given_true_sarcastic": 0.11738811445341159,
+      "accuracy": 0.9161425576519916
+    },
+    {
+      "alpha": 0.5,
+      "n": 2862.0,
+      "pred_sarcasm_rate": 0.45108315863032844,
+      "mean_prob_sarcastic": 0.44819557125296816,
+      "pred_sarcasm_rate_given_true_not_sarcastic": 0.05470313542361575,
+      "pred_sarcasm_rate_given_true_sarcastic": 0.8870139398385913,
+      "pred_not_sarcasm_rate_given_true_not_sarcastic": 0.9452968645763843,
+      "pred_not_sarcasm_rate_given_true_sarcastic": 0.11298606016140866,
+      "accuracy": 0.9175401816911251
+    },
+    {
+      "alpha": 1.0,
+      "n": 2862.0,
+      "pred_sarcasm_rate": 0.4559748427672956,
+      "mean_prob_sarcastic": 0.45286358244180847,
+      "pred_sarcasm_rate_given_true_not_sarcastic": 0.05870580386924616,
+      "pred_sarcasm_rate_given_true_sarcastic": 0.8928833455612619,
+      "pred_not_sarcasm_rate_given_true_not_sarcastic": 0.9412941961307538,
+      "pred_not_sarcasm_rate_given_true_sarcastic": 0.10711665443873808,
+      "accuracy": 0.9182389937106918
+    },
+    {
+      "alpha": 2.0,
+      "n": 2862.0,
+      "pred_sarcasm_rate": 0.46331236897274636,
+      "mean_prob_sarcastic": 0.46208285835554014,
+      "pred_sarcasm_rate_given_true_not_sarcastic": 0.06270847231487658,
+      "pred_sarcasm_rate_given_true_sarcastic": 0.9038884812912693,
+      "pred_not_sarcasm_rate_given_true_not_sarcastic": 0.9372915276851234,
+      "pred_not_sarcasm_rate_given_true_sarcastic": 0.09611151870873075,
+      "accuracy": 0.9213836477987422
+    },
+    {
+      "alpha": 4.0,
+      "n": 2862.0,
+      "pred_sarcasm_rate": 0.47938504542278126,
+      "mean_prob_sarcastic": 0.48030761469501787,
+      "pred_sarcasm_rate_given_true_not_sarcastic": 0.07938625750500333,
+      "pred_sarcasm_rate_given_true_sarcastic": 0.9192956713132795,
+      "pred_not_sarcasm_rate_given_true_not_sarcastic": 0.9206137424949966,
+      "pred_not_sarcasm_rate_given_true_sarcastic": 0.08070432868672046,
+      "accuracy": 0.9199860237596087
+    },
+    {
+      "alpha": 8.0,
+      "n": 2862.0,
+      "pred_sarcasm_rate": 0.5143256464011181,
+      "mean_prob_sarcastic": 0.5179848081160892,
+      "pred_sarcasm_rate_given_true_not_sarcastic": 0.12074716477651767,
+      "pred_sarcasm_rate_given_true_sarcastic": 0.9471753484959647,
+      "pred_not_sarcasm_rate_given_true_not_sarcastic": 0.8792528352234823,
+      "pred_not_sarcasm_rate_given_true_sarcastic": 0.05282465150403522,
+      "accuracy": 0.9116002795248078
+    }
+  ]
+}

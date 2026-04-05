@@ -1,0 +1,15 @@
+{
+  "lr_total_errors": 561,
+  "lr_fp": 247,
+  "lr_fn": 314,
+  "roberta_total_errors": 240,
+  "roberta_fp": 80,
+  "roberta_fn": 160,
+  "overlap_count": 119,
+  "overlap_both_fp": 35,
+  "overlap_both_fn": 84,
+  "overlap_lr_fp_roberta_fn": 0,
+  "overlap_lr_fn_roberta_fp": 0,
+  "overlap_same_direction": 119,
+  "overlap_same_direction_frac_of_overlap": 1.0
+}

@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Large model weights / optimizer state (regenerate with training scripts)
+**/*.safetensors
+**/optimizer.pt
+pytorch_model.bin

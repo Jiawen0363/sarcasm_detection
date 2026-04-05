@@ -1,0 +1,19 @@
+{
+  "data_path": "/home/jiawen/AppraisalBench/4702/Sarcasm_Headlines_Dataset_v2.json",
+  "seed": 42,
+  "train_ratio": 0.8,
+  "val_ratio": 0.1,
+  "test_ratio": 0.1,
+  "stratify": true,
+  "sklearn_train_test_split": "first: test_size=test_ratio from full; second: test_size=val/(train+val) from remainder, same random_state",
+  "columns": [
+    "headline",
+    "label"
+  ],
+  "label": "0/1 is_sarcastic as in read_dataset",
+  "sizes": {
+    "train": 22895,
+    "val": 2862,
+    "test": 2862
+  }
+}
